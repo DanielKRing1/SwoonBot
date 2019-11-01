@@ -1,4 +1,3 @@
-sudo: required
 language: node_js
 
 deploy:
@@ -16,5 +15,3 @@ deploy:
 
 after_deploy:
   ./travis/after_deploy_1.sh
-
-script: ./run_build.sh
