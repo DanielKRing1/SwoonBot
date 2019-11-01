@@ -1,7 +1,7 @@
 language: node_js
 
 deploy:
-  provider: codedeploy
+  - provider: codedeploy
   access_key_id: AKIAIRHP2XLBEUHPJEHQ
   secret_access_key:
     secure: F0vkdvhH7n5C7SbXgf2Xen4Zv+uy8cNcteYFUW+aqWBVcltZzixcFGHyXCiQYAHehXANCMQLIzohGRUto7zQ0nYzbU2M/+QUFWnw6wGvPF3Wxd6ubFIljBfZfSMyXrBDMqV94Mq67cvd8rWaylwu7791e73pwJXDviu6hLHi+qGS2A+54Hj2ANMpVh1AxbASZX0Lg3Kw+Pj6fCw8bXtvX7PTZXiLpD6qcVCnmN0QRtSVwCJlArv/y2tqPfo6siWwahEtfj/Bu4/AxcvejU22NACIBFzqZ3HmHIx2tKxd0bDq8E0b1WMmGl1qAmxE/5WdBTIMsGhzt2mVv1TtE793jI7Zvx4VRIk5FjSK1fQm/aXBvFwT0ckaksTZWsvRi/00ODSHVxCXTmuo0kLgsYC8YmLPxj/yjgKIr0RdrpsioxmTP8tGWlBtcaVx3sSuJPn0QlV4qpVatmmvGQVRdZdJ+LRY9iZtQqF0oc/Lj6XQpgcIDdALQi3fkKV2Z18sCuL9eLNGkGF8mQc3ot/71XFYJyNDenlFf2ORAflJBDYhwqb98fahncXmOataEbiVfICJyGQ1StWeTm4Xs9T3vEutmLyYAA0ZbwTo9pL++BBZ9G2+4sjoLFBO9zvazpqldUe2rH0XgqoIf+DXnQMnImbyrwW+sVdDnMK3b+cKNn0IhvU=
@@ -14,4 +14,4 @@ deploy:
     repo: DanielKRing1/SwoonBot
 
 after_deploy:
-  ./after_deploy_1.sh
+  - ./after_deploy_1.sh
