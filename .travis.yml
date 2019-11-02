@@ -8,4 +8,6 @@ deploy:
   deployment_group: SwoonCodeDeploy
   on:
     repo: DanielKRing1/SwoonBot
+  region: us-west-1
+
 after_deploy: "./travis/after_deploy_1.sh"
